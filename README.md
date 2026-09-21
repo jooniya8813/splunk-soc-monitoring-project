@@ -37,6 +37,21 @@ One of the detections looks for PowerShell commands that use arguments such as:
 
 These options are not always malicious, but they can be useful indicators to investigate when they appear unexpectedly.
 
+## Dashboard
+
+I built a Splunk dashboard to make the Windows activity easier to review in one place.
+
+It includes:
+
+- Total process executions
+- PowerShell executions
+- Reconnaissance command activity
+- Top executed processes
+- PowerShell activity over time
+- Recent suspicious PowerShell commands
+
+![Windows SOC Monitoring Dashboard](screenshots/Dashboard.png)
+
 ## Test Activity
 
 To test the searches, I generated some activity on my own machine and then looked for it in Splunk.
